@@ -1,0 +1,95 @@
+.third {
+  background: white;
+  width: 100%;
+  height: auto;
+
+  .container {
+    font-family: 'Montserrat', cursive;
+    max-width: 1024px;
+    height: 100%;
+    background: white;
+    margin: 0 auto;
+    border: 2px dashed pink;
+    p {
+      font-size: 2em;
+      text-align: center;
+      margin: 20px auto;
+      border: 2px dashed RGB(181,133,156);
+    }
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media only screen and (min-width: 576px)and (max-width: 968px){
+        justify-content: space-around;
+      }
+      @media only screen and (max-width: 576px){
+        justify-content: center;
+      }
+      .photo:nth-of-type(2n) {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px dashed deeppink;
+        margin: 5px;
+
+      }
+      .photo:nth-of-type(2n+1) {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px dashed green;
+        margin: 5px;
+
+      }
+      .rotate {
+        animation: turn 0.5s ease-in;
+      }
+    }
+  }
+
+}
+
+.fullScreen {
+  position: fixed;
+  display: block;
+  height: 90vh;
+  width: auto;
+  max-width: 90vw;
+  transform-origin: center;
+  left: 5vw;
+  top: 5vh;
+  border: 2px solid black;
+  margin: 0 auto;
+  z-index: 1;
+  background:rgba(255,255,255,0.7);
+}
+.fullScreen .close {
+  display: block;
+  margin: auto;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes turn {
+
+  0%{
+    transform: rotate(0deg) ;
+  }
+
+  100% {
+    transform: rotate(720deg);
+
+  }
+}

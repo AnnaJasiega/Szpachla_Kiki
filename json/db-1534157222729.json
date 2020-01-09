@@ -1,0 +1,10 @@
+{
+  "appointments": [
+    {
+      "name": "Ania",
+      "surname": "Jasięga",
+      "day": "2018-05-08",
+      "hour": "16:00"
+    }
+  ]
+}

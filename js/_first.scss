@@ -1,0 +1,128 @@
+.first{
+  height: 400px;
+  background: rgba(255, 255, 255,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgb(255, 255, 255) 0%, rgba(247,207,237,1) 50%, rgba(245,193,230,1) 74%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255,1)), color-stop(50%, rgba(247,207,237,1)), color-stop(74%, rgba(245,193,230,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255,1) 0%, rgba(247,207,237,1) 50%, rgba(245,193,230,1) 74%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255,1) 0%, rgba(247,207,237,1) 50%, rgba(245,193,230,1) 74%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255,1) 0%, rgba(247,207,237,1) 50%, rgba(245,193,230,1) 74%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255,1) 0%, rgba(247,207,237,1) 50%, rgba(245,193,230,1) 74%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f5c1e6', GradientType=1 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+
+  width: 300px;
+  height: auto;
+  animation: rotate 2s 0.5s ease-in;
+
+
+  }
+  .firstText {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 576px){
+      display: none;
+    }
+
+
+
+
+    p:first-child{
+      font-weight: 200;
+      font-size: 70px;
+      height: 70px;
+      animation: pWalk .5s ease-in;
+    }
+    p:nth-child(2){
+      font-weight: 700;
+      height: 50px;
+      font-size: 40px;
+      animation: pTwoWalk 1s linear;
+    }
+    p:nth-child(3){
+      font-weight: 400;
+      font-size: 30px;
+      font-kerning: initial;
+      height: 50px;
+      background-color: white;
+      line-height: 100%;
+      border: 2px dashed pink;
+      font-family: 'Montserrat', cursive;
+      animation: pThreeWalk 1s ease-out;
+      @media only screen and (min-width: 576px)and (max-width: 768px){
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+
+  0%{
+    transform: rotate(0deg) ;
+  }
+
+  70% {
+    transform: rotate(2160deg);
+
+  }
+  80% {
+    transform: rotate(180deg);
+
+  }
+
+  90% {
+    transform: rotate(90deg);
+
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+
+
+@keyframes pWalk {
+
+  0%{
+    transform: translate(0,-100px) rotateX(180deg) scale(0.1) ;
+  }
+  50% {
+    transform:  scaleY(2);
+
+  }
+  100% {
+    transform: translate(0px,0) scaleY(1);
+
+  }
+}
+@keyframes pTwoWalk {
+
+  0%{
+    transform: translate(80vw,0);
+  }
+  50% {
+    transform: translate(-100px,0) scaleY(0.1);
+
+  }
+
+  100% {
+    transform: translate(00px,0);
+
+  }
+}
+@keyframes pThreeWalk {
+
+  0%{
+    transform: translate(0,+100px) scale(2);
+  }
+
+  100% {
+    transform: translate(0px,0) ;
+
+  }
+}
