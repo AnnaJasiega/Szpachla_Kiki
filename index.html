@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/datepicker.css">    <title>Szpachla Kiki</title>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <div>
+                <span>SZPACHLA </span><span id="kiki">KIKI</span>
+            </div>
+            <ul>
+                <li><a href="https://www.facebook.com/szpachlakiki/">FACEBOOK</a></li>
+                <li><a href="https://www.instagram.com/szpachla_kiki/">INSTAGRAM</a></li>
+                <li><a href="https://www.pinterest.com">PINTEREST</a></li>
+
+            </ul>
+            </div>
+    </div>
+</header>
+<section class="first">
+
+    <img src="./images/logo.png"/>
+    <div class="firstText">
+        <p id="pFirst">We design</p>
+        <P>Beautiful & Minimal Ideas</P>
+        <P>Created with love & care</P>
+    </div>
+</section>
+<section class="second">
+    <div class="container">
+        <p id="umowSie">Umów się</p>
+        <div>
+
+            <div id="calendar"><span>Kalendarz</span></div>
+            <div>
+                <div id="nav"><span id="prev">&lt;  &nbsp;&nbsp;&nbsp;  </span><span id="next">  &nbsp;&nbsp;&nbsp;  &gt;</span></div>
+                <div id="currentCalendar">
+
+                </div>
+            </div>
+            <form>
+               <div>Imię:</div><label><input type="text" id="name"></label>
+               <div>Nazwisko:</div><label><input type="text" id="surname"></label>
+               <div>Dzień:</div><label><input type="text" class="datepicker" id="day"/></label>
+               <div>Godzina:</div>
+                <select id="hour">
+                <option>10:00</option>
+                <option>12:00</option>
+                <option>14:00</option>
+                <option>16:00</option>
+                <option>18:00</option>
+                </select>
+            </form>
+            <div>Dodając spotkanie wyrażasz zgodę na przetwarzanie swoich danych i umieszczenie ich w kalendarzu</div>
+            <div id="info"></div>
+                <p id="button">Dodaj</p>
+
+
+</div>
+
+    </div>
+</section>
+<section class="third">
+<div class="container">
+    <p id='inspire'>Zainspiruj się</p>
+    <div id="insta">
+
+
+    </div>
+
+</div>
+</section>
+
+
+
+</body>
+<script src="js/datepicker.js"></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+<script src="js/out.js"></script>
+</html>
