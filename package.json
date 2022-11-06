@@ -20,7 +20,7 @@
     "webpack-command": "^0.4.1"
   },
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "instagram-api": "^1.0.3",
     "js-datepicker": "^3.3.2"
   }
